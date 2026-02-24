@@ -7,9 +7,9 @@ Ensure git is working (this takes a while, grab a ☕)
 xcode-select --install
 ```
 
-Install ohmyzsh + plugins
+Install tools
 ```sh
-bash <(curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/install-zsh.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/install-tools.sh)
 ```
 
 Install apps
@@ -22,9 +22,3 @@ Setup zshrc config (only run this if your zshrc is empty)
 curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/.zshrc -o ~/.zshrc
 source ~/.zshrc
 ```
-
-Install nvm
-```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
-```
-
