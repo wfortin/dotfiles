@@ -7,19 +7,24 @@ Ensure git is working (this takes a while, grab a ☕)
 xcode-select --install
 ```
 
-Clone repo
+Install ohmyzsh + plugins
 ```sh
-git clone git@github.com:wfortin/dotfiles.git "$HOME/.dotfiles"
+bash <(curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/install-zsh.sh)
 ```
 
-Run install script
+Install apps
 ```sh
-chmod +x ./install.sh
-./install.sh
+bash <(curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/install-apps.sh)
 ```
 
 Setup zshrc config (only run this if your zshrc is empty)
 ```sh
-cp ./.zshrc ~/.zshrc
+curl -fsSL https://raw.githubusercontent.com/wfortin/dotfiles/master/.zshrc -o ~/.zshrc
 source ~/.zshrc
 ```
+
+Install nvm
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.4/install.sh | bash
+```
+
