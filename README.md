@@ -2,7 +2,7 @@
 
 ## Install
 
-Ensure git is working
+Ensure git is working (this takes a while, grab a ☕)
 ```sh
 xcode-select --install
 ```
@@ -16,4 +16,10 @@ Run install script
 ```sh
 chmod +x ./install.sh
 ./install.sh
+```
+
+Setup zshrc config (only run this if your zshrc is empty)
+```sh
+cp ./.zshrc ~/.zshrc
+source ~/.zshrc
 ```

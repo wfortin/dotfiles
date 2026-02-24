@@ -11,8 +11,7 @@ echo 'Install ohmyzsh'
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Copy dotfiles config to zshrc
-echo 'Setup zsh'
-cp ./.zshrc ~/.zshrc
+# zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
-echo 'Done! 🌈' 
+echo 'Apps installed! 🌈' 
